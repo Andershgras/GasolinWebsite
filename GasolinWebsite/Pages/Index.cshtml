@@ -3,50 +3,79 @@
 @{
     ViewData["Title"] = "Home"; 
 }
-
+<!-- Sektion for hero -->
 <div class="hero">
     <h1>Legendarisk Gasolin udstilling</h1>
 </div>
-
+<!-- Sektion for "description box" -->
 <div class="description-box">
     <h2>Om Udstillingen</h2>
     <p>
         Oplev en unik udstilling om Gasolin, et af Danmarks mest legendariske rockbands.
         Her kan du dykke ned i bandets historie, læse bandmedlemmernes biografier,
-        scroll igennem bandet historie og se specielle genstande og memorabelier.
+        scroll igennem bandets historie og se specielle genstande og memorabelier.
+    </p>
+    <p class="begivenhed-info">
+        <strong>DATO:</strong> 18-03-2025 <br>
+        <strong>LOKATION:</strong> Roskilde Festival <br>
+        <strong>PRIS:</strong> GRATIS!
     </p>
 </div>
-
+<!-- Section for Info Boxes Header -->
 <div class="info-section">
-    <div class="info-box">
-        <img src="/images/band.jpg" alt="Bandet" />
-        <h3>Genstand 1</h3>
-        <p>bla bla bla bla bla</p>
-    </div>
+    <h3 class="info-header">Læs mere om Gasolin</h3>
+    <p class="info-text">Her kan du læse mere om Gasolin og deres historie.</p>
+</div>
 
+<!-- Sektion for "info-boxes" -->
+<div class="info-container">
+    <a href="/GasolinBiography" class="info-box">
+        <img src="/images/biografi.png">
+        <p>Læs biografier om hvert bandmedlem.</p>
+    </a>
+    <a href="/timeline" class="info-box">
+        <img src="/images/Timeline.png">
+        <p>Se en timeline over bandets historie.</p>
+    </a>
+    <a href="/interview" class="info-box">
+        <img src="/images/Interview.png">
+        <p>Hør og se interviews med bandet.</p>
+    </a>
+    <a href="/memorabilia" class="info-box">
+        <img src="/images/memorabilia.png">
+        <p>Se forskellige band memorabilia.</p>
+    </a>
+</div>
+<!-- CSS Sektion for styling -->
 <style>
+    html, body{
+        background-color: yellow;
+        margin: 0;
+        padding: 0;
+    }
+
     .hero 
     { /* Hero er en CSS class som er en full-width background image med en stor tekst*/
-        background: url('/images/Gasolin.png') no-repeat center center; /*no-repeat betyder baggrund billede ikk repeater, center center = sætter billedet i midten vertikalt og horizontalt*/
+        background: url('/images/Gasolin.png') no-repeat left center; /*no-repeat betyder baggrund billede ikk repeater, center center = sætter billedet i midten vertikalt og horizontalt*/
         background-size: cover; /*Cover billede bag teksten*/
 
-        height: 60vh; /* 60% af viewport højde */
-        margin: 0; /* Fjerner margen*/
-        padding: 0; /* Fjerner padding*/
-		width: 100%; /* 100% af viewport bredde */
-        margin-left: auto;
-        margin-right: auto;
-
+        width: 100%; /* 100% af viewport bredde */
+        height: 50vh; /* 50% af viewport højde */
+        
         display: flex; /* Gør elementet til en flex container, hvilket gør det lettere at justere*/
         align-items: center; /* Centrerer indholdet lodret*/
-        justify-content: center; /* Centrerer indholdet vandret */
+        justify-content: center; /* Centers horizontally */
         text-align: center; /*Allign teksten til midten*/
+
         color: red; /* Farve på tekst*/
+        margin: 0; /* Fjerner margen*/
+        padding: 0; /* Fjerner padding*/
     }
     .hero h1 
     {
-        font-size: 4rem; /* Font Size */
+        font-size: 6rem; /* Font Size */
         font-weight: bold; /* Fed skrift */
+        font-family: "Brush Script MT", cursive; /* Font type */
     }
 
     /* Style beskrivelsesboksen */
@@ -71,6 +100,51 @@
     {
         font-size: 1.2rem; /* Skriftstørrelse på brødtekst */
         color: white; /* Farve på brødtekst */
+    }
+    /* Styling for new boxes */
+    .info-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Tilføjer mellemrum mellem boksene */
+        margin: 40px auto;
+        max-width: 1300px;
+        padding-bottom: 100px; /* Tilføjer mellemrummet mellem info-boxene og footer*/
+    }
+
+    .info-box {
+        background: #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .info-box img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .info-box p {
+        font-size: 1rem; 
+        margin-top: 10px;
+        color: black;
+    }
+
+    .info-section {
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    .info-header {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 10px; 
+    }
+
+    .info-text {
+        font-size: 1.2rem;
+        color: black;
     }
 </style>
 
