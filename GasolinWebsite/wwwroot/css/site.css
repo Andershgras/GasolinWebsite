@@ -1,22 +1,66 @@
+
+.yellow-page {
+    background-color: #FFFF00; /* Yellow background */
+    margin: 0;
+    padding: 0;
+}
+
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.title-container {
+    text-align: center; /* Center horizontally */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+.member-card {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.band-image {
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: 7px;
+}
+
+.member-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.member-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d10000; /* Gasolin’s red theme */
 }
