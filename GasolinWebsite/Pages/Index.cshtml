@@ -1,10 +1,76 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home"; 
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero">
+    <h1>Legendarisk Gasolin udstilling</h1>
 </div>
+
+<div class="description-box">
+    <h2>Om Udstillingen</h2>
+    <p>
+        Oplev en unik udstilling om Gasolin, et af Danmarks mest legendariske rockbands.
+        Her kan du dykke ned i bandets historie, læse bandmedlemmernes biografier,
+        scroll igennem bandet historie og se specielle genstande og memorabelier.
+    </p>
+</div>
+
+<div class="info-section">
+    <div class="info-box">
+        <img src="/images/band.jpg" alt="Bandet" />
+        <h3>Genstand 1</h3>
+        <p>bla bla bla bla bla</p>
+    </div>
+
+<style>
+    .hero 
+    { /* Hero er en CSS class som er en full-width background image med en stor tekst*/
+        background: url('/images/Gasolin.png') no-repeat center center; /*no-repeat betyder baggrund billede ikk repeater, center center = sætter billedet i midten vertikalt og horizontalt*/
+        background-size: cover; /*Cover billede bag teksten*/
+
+        height: 60vh; /* 60% af viewport højde */
+        margin: 0; /* Fjerner margen*/
+        padding: 0; /* Fjerner padding*/
+		width: 100%; /* 100% af viewport bredde */
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex; /* Gør elementet til en flex container, hvilket gør det lettere at justere*/
+        align-items: center; /* Centrerer indholdet lodret*/
+        justify-content: center; /* Centrerer indholdet vandret */
+        text-align: center; /*Allign teksten til midten*/
+        color: red; /* Farve på tekst*/
+    }
+    .hero h1 
+    {
+        font-size: 4rem; /* Font Size */
+        font-weight: bold; /* Fed skrift */
+    }
+
+    /* Style beskrivelsesboksen */
+    .description-box {
+        max-width: 1300px; /* Sætter den maksimale bredde for boksen*/
+        margin: 40px auto; /* Giver 40px afstand op/ned og centrerer boksen vandret*/
+        padding: 20px; /* Tilføjer indvendig afstand så teksten ikke kører ved kanterne*/
+        background: gray; /*Baggrunds farve på boksen */
+        border-radius: 10px; /* Angiver hvor "rund" boksen skal være*/
+        text-align: center; /* Align teksten i midten */
+
+        margin: 0 auto 40px auto; /* Fjerner top-margin (margen mellem hero og description , men bevarer bundmargen */
+    }
+    /*Style for overskrift i Description box*/
+    .description-box h2
+    {
+        font-size: 2rem; /*Skrift størrelse på overskrift i Description box*/
+        color: white; /* Tekst farve på overskrift i Description box*/
+    }
+    /* Style for brødttekst i description box*/
+    .description-box p 
+    {
+        font-size: 1.2rem; /* Skriftstørrelse på brødtekst */
+        color: white; /* Farve på brødtekst */
+    }
+</style>
+
