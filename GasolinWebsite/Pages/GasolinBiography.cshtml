@@ -1,0 +1,16 @@
+﻿@page
+@model GasolinBiographyModel
+@{
+    ViewData["Title"] = "Gasolin Band Members";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var member in Model.Members)
+{
+    <div class="member-card">
+        <h2>@member.Name</h2>
+        <h3>Role: @member.Role</h3>
+        <p>@member.Biography</p>
+    </div>
+}
