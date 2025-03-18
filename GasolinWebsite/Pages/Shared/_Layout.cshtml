@@ -15,7 +15,7 @@
             <div class="container-fluid">
                 <!-- 1. element i navbaren: icon-->
 
-                <a class="navbar-brand" href="/Pages/Index.cshtml">Ico</a>
+                <a class="navbar-brand" href="/Index">Ico</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- her kan et icon indsættes-->
                     <span class="navbar-toggler-icon"> </span>
@@ -24,7 +24,7 @@
                     <ul class="navbar-nav">
                         <!-- navbar elemente 1 home-->
                         <li class="nav-item text-body">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <!-- navbar element 2 -->
                         <li class="nav-item">
@@ -41,8 +41,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- Elementerne i dropdown menu-->
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Memrobilia</a></li>
+                                <li><a class="dropdown-item" href="#">TimeLine</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
@@ -87,13 +87,13 @@
                                 <a class="text-white">man</a>
                             </p>
                             <p>
-                                <a class="text-white">MDWordPress</a>
+                                <a class="text-white"></a>
                             </p>
                             <p>
-                                <a class="text-white">BrandFlow</a>
+                                <a class="text-white"></a>
                             </p>
                             <p>
-                                <a class="text-white">Bootstrap Angular</a>
+                                <a class="text-white"></a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -103,13 +103,13 @@
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">
-                                Useful links
+                                Useful links:
                             </h6>
                             <p>
-                                <a class="text-white">Your Account</a>
+                                <a class="text-white"></a>
                             </p>
                             <p>
-                                <a class="text-white">Become an Affiliate</a>
+                                <a class="text-white"></a>
                             </p>
                             <p>
                                 <a class="text-white">Shipping Rates</a>
@@ -153,14 +153,14 @@
                             <a class="btn btn-outline-light btn-floating m-1"
                                class="text-white"
                                role="button">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="fi fi-brands-facebook"></i>
                             </a>
 
                             <!-- Twitter -->
                             <a class="btn btn-outline-light btn-floating m-1"
                                class="text-white"
                                role="button">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fi fi-brands-facebook"><img src="~/Images/facebook.png" alt="Alternate Text"/></i>
                             </a>
 
                             <!-- Google -->
