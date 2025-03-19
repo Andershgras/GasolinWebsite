@@ -1,0 +1,11 @@
+﻿body {
+}
+nav,div,li,a {
+    color: white;
+}
+nav, div, div, a {
+    color: white;
+}
+nav, div, div, ul, li, a {
+    color: white;
+}
