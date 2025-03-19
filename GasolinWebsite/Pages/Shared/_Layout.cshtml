@@ -9,10 +9,24 @@
     <link rel="stylesheet" href="~/GasolinWebsite.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="/pages/shared/stylesheet_layout.css" />
 </head>
+
 <body>
+    <style>
+        html, body {
+            background-image: url('/images/Gold.png?v=1');
+            background-repeat: repeat; /* Repeats the texture */
+            background-size: cover; /* Adjusts image to cover the screen */
+            background-position: center;
+        }
+
+       
+
+    </style>
+
     <header>
         <!-- Navigations baren-->
-        <nav class="navbar navbar-expand-lg bg-gradient bg-black">
+        <nav class="navbar navbar-expand-lg bg-gradient  navbar-dark0" style="background-color: darkred">
+            <div class="col-lg-auto"></div>
             <div class="container-fluid">
                 <!-- 1. element i navbaren: icon-->
 
@@ -22,31 +36,19 @@
                     <span class="navbar-toggler-icon"> </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav text-body">
+                    <ul class="navbar-nav">
                         <!-- navbar elemente 1 home-->
-                        <li class="nav-item text-body">
+                        <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <!-- navbar element 2 -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
+                        
                         <!-- navvbar element 3-->
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/GasolinBiography">Band Biography</a>
                         </li>
                         <!-- navbar element 4-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Udstilling
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- Elementerne i dropdown menu-->
-                                <li><a class="dropdown-item" href="#">Memrobilia</a></li>
-                                <li><a class="dropdown-item" href="#">TimeLine</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+                        
 
                         <!-- navbar element 5 -->
                         <li class="nav-item">
@@ -169,26 +171,7 @@
                                 <i class="fi fi-brands-facebook"></i>
                             </a>
 
-                            <!-- Twitter -->
-                            <a class="btn btn-outline-light btn-floating m-1"
-                               class="text-white"
-                               role="button">
-                                <i class="fi fi-brands-facebook"><img src="~/Images/facebook.png" alt="Alternate Text"/></i>
-                            </a>
-
-                            <!-- Google -->
-                            <a class="btn btn-outline-light btn-floating m-1"
-                               class="text-white"
-                               role="button">
-                                <i class="fab fa-google"></i>
-                            </a>
-
-                            <!-- Instagram -->
-                            <a class="btn btn-outline-light btn-floating m-1"
-                               class="text-white"
-                               role="button">
-                                <i class="fab fa-instagram"></i>
-                            </a>
+                       
                         </div>
                         <!-- Grid column -->
                     </div>
@@ -208,3 +191,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+ 

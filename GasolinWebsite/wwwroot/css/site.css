@@ -45,6 +45,13 @@ body {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.navbar-nav .nav-link {
+    color: white;
+   
+}
+
+
+
 .band-image {
     width: 250px; /* Adjust as needed */
     height: auto;
