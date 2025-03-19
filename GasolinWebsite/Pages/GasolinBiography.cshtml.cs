@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
 
-public class GasolinBiographyModel : PageModel
+public class GasolinBiographyModel : PageModel// define  class
 {
-    public List<BandMember> Members { get; set; } = new List<BandMember>();
+    public List<BandMember> Members { get; set; } = new List<BandMember>();//object
 
     public void OnGet()
     {
