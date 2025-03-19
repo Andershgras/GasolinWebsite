@@ -124,3 +124,11 @@ body {
     margin: 0;
     color: #555;
 }
+/*This code or class i used to restrict the size of video clips*/
+
+.video-container {
+    width: 100%; /*  full width  */
+    height: 230px; /*  fixed height */
+    object-fit: cover; /*  video fills the frame  */
+    border-radius: 10px; /* Adds rounded corners */
+}

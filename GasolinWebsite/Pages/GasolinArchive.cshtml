@@ -8,32 +8,33 @@
     <h1>Gasolin Archive</h1>
     <p>Here are some images and video clips of their work.</p>
 
-    <!-- Code to place 4 images -->
+    <!-- Code to place 4 images  And to controll the size of the images i have used primitive method instead of css -->
     <div class="row">
-        <div class="col-md-3">
-            <img src="/images/gasolin1.jpg" class="img-fluid" alt="Gasolin Image 1">
+        <div class="col-md-3"> 
+            <img src="/images/gasolin1.jpg" class="img-fluid" alt="Gasolin Image 1" width="250" height="160">
         </div>
         <div class="col-md-3">
-            <img src="/images/gasolin2.jpg" class="img-fluid" alt="Gasolin Image 2">
+            <img src="/images/gasolin2.jpg" class="img-fluid" alt="Gasolin Image 2" width="250" height="160">
         </div>
         <div class="col-md-3">
-            <img src="/images/gasolin3.jpg" class="img-fluid" alt="Gasolin Image 3">
+            <img src="/images/gasolin3.jpg" class="img-fluid" alt="Gasolin Image 3" width="250" height="160">
         </div>
         <div class="col-md-3">
-            <img src="/images/gasolin4.jpg" class="img-fluid" alt="Gasolin Image 4">
+            <img src="/images/gasolin4.jpg" class="img-fluid" alt="Gasolin Image 4" width="250" height="160">
         </div>
     </div>
 
     <!--Code to placce four videos -->
     <div class="row mt-4">
         <div class="col-md-6">
-            <video controls class="w-100">
+            <video controls class="video-container">    <!--to call class for fixed sizes-->
+
                 <source src="/videos/gasolin1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="col-md-6">
-            <video controls class="w-100">
+            <video controls class="video-container">
                 <source src="/videos/gasolin2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -42,13 +43,15 @@
 
     <div class="row mt-4">
         <div class="col-md-6">
-            <video controls class="w-100">
+            <video controls class="video-container"> <!--to call class for fixed sizes-->
+
+            
                 <source src="/videos/gasolin3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="col-md-6">
-            <video controls class="w-100">
+            <video controls class="video-container">
                 <source src="/videos/gasolin4.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
