@@ -1,0 +1,29 @@
+﻿@page
+@model GasolinTimeLineModel
+@{
+    ViewData["Title"] = "Gasolin Timeline";
+}
+
+<div class="timeline-container">
+    <h1 class="timeline-title">@ViewData["Title"]</h1>
+
+    <div class="timeline">
+        @if (Model.GasolinTimeLineEvents != null && Model.GasolinTimeLineEvents.Any())
+        {
+            @foreach (var eventItem in Model.GasolinTimeLineEvents)
+            {
+                <div class="timeline-event">
+                    <div class="event-date">@eventItem.Date</div>
+                    <div class="event-content">
+                        <h3>@eventItem.Title</h3>
+                        <p>@eventItem.Description</p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No events found.</p>
+        }
+    </div>
+</div>
