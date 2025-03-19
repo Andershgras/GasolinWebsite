@@ -78,7 +78,7 @@ body {
 /*GasolinTimeLine Style*/
 
 body {
-    background-color: yellow; /* Sets the whole page background to yellow */
+   /* background-color: yellow; /* Sets the whole page background to yellow */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -90,7 +90,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: yellow; /* Added yellow background */
+   /* background-color: yellow;  Added yellow background */
 }
 
 .timeline-title {
@@ -134,4 +134,24 @@ body {
     height: 230px; /*  fixed height */
     object-fit: cover; /*  video fills the frame  */
     border-radius: 10px; /* Adds rounded corners */
+}
+
+
+.image-container {
+    width: 100%; /*  full width  */
+    height: 200px; /*  fixed height */
+    object-fit: cover; /*  video fills the frame  */
+    border-radius: 10px; /* Adds rounded corners */
+}
+.description {
+    margin-top: 8px; /* Adds spacing between image/video and description */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Change text color */
+    font-family: Arial, sans-serif; /* Change font family */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center-align text */
+    background-color: #f0f0f0; /* Add a background color */
+    padding: 5px 10px; /* Add padding around the text */
+    border-radius: 5px; /* Add rounded corners to the background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }

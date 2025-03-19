@@ -3,58 +3,62 @@
 @{
     ViewData["Title"] = "Gasolin Archive";
 }
-
 <div class="container">
     <h1>Gasolin Archive</h1>
     <p>Here are some images and video clips of their work.</p>
 
-    <!-- Code to place 4 images  And to controll the size of the images i have used primitive method instead of css -->
+    <!-- Image Gallery -->
     <div class="row">
-        <div class="col-md-3"> 
-            <img src="/images/gasolin1.jpg" class="img-fluid" alt="Gasolin Image 1" width="250" height="160">
+        <div class="col-md-3">
+            <img src="/images/gasolin1.jpg" class="image-container" alt="Gasolin Image 1">
+            <p class="description">Official press foto.</p>
         </div>
         <div class="col-md-3">
-            <img src="/images/gasolin2.jpg" class="img-fluid" alt="Gasolin Image 2" width="250" height="160">
+            <img src="/images/gasolin2.jpg" class="image-container" alt="Gasolin Image 2">
+            <p class="description">Enjoying thier time togather.</p>
         </div>
         <div class="col-md-3">
-            <img src="/images/gasolin3.jpg" class="img-fluid" alt="Gasolin Image 3" width="250" height="160">
+            <img src="/images/gasolin3.jpg" class="image-container" alt="Gasolin Image 3">
+            <p class="description">Performing live out door.</p>
         </div>
         <div class="col-md-3">
-            <img src="/images/gasolin4.jpg" class="img-fluid" alt="Gasolin Image 4" width="250" height="160">
+            <img src="/images/gasolin4.jpg" class="image-container" alt="Gasolin Image 4">
+            <p class="description">Having fun in city center.</p>
         </div>
     </div>
 
-    <!--Code to placce four videos -->
+    <!-- Video Gallery -->
     <div class="row mt-4">
         <div class="col-md-6">
-            <video controls class="video-container">    <!--to call class for fixed sizes-->
-
+            <video controls class="video-container">
                 <source src="/videos/gasolin1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <p class="description">Description for Video 1: This is a sample video description.</p>
         </div>
         <div class="col-md-6">
             <video controls class="video-container">
                 <source src="/videos/gasolin2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <p class="description">Description for Video 2: This is another sample video description.</p>
         </div>
     </div>
 
     <div class="row mt-4">
         <div class="col-md-6">
-            <video controls class="video-container"> <!--to call class for fixed sizes-->
-
-            
+            <video controls class="video-container">
                 <source src="/videos/gasolin3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <p class="description">Description for Video 3: Yet another sample video description.</p>
         </div>
         <div class="col-md-6">
             <video controls class="video-container">
                 <source src="/videos/gasolin4.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <p class="description">Description for Video 4: Final sample video description.</p>
         </div>
     </div>
 </div>
