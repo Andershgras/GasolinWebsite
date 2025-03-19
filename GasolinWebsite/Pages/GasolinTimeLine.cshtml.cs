@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public class GasolinTimeLineModel : PageModel
+public class GasolinTimeLineModel : PageModel // define  a class
 {
     public List<GasolinEvent> GasolinTimeLineEvents { get; set; } = new();
 
