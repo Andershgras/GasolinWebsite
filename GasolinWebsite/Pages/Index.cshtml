@@ -34,11 +34,11 @@
         <img src="/images/biografi.png">
         <p>Læs biografier om hvert bandmedlem.</p>
     </a>
-    <a href="/timeline" class="info-box">
+    <a href="/GasolinTimeLine" class="info-box">
         <img src="/images/Timeline.png">
         <p>Se en timeline over bandets historie.</p>
     </a>
-    <a href="/interview" class="info-box">
+    <a href="/GasolinArchive" class="info-box">
         <img src="/images/Interview.png">
         <p>Hør og se interviews med bandet.</p>
     </a>
@@ -68,6 +68,7 @@
         align-items: center; /* Centrerer indholdet lodret*/
         justify-content: center; /* Centers horizontally */
         text-align: center; /*Allign teksten til midten*/
+        border: 4px solid black; /* Tilføjer en sort kant rundt om billedet */
 
         color: orange; /* Farve på tekst*/
         margin: 0; /* Fjerner margen*/
@@ -86,8 +87,8 @@
         margin: 40px auto; /* Giver 40px afstand op/ned og centrerer boksen vandret*/
         padding: 20px; /* Tilføjer indvendig afstand så teksten ikke kører ved kanterne*/
         background: orange; /*Baggrunds farve på boksen */
-        border-radius: 10px; /* Angiver hvor "rund" boksen skal være*/
         text-align: center; /* Align teksten i midten */
+		border: 4px solid black; /* Tilføjer en sort kant rundt om boksen */
 
         margin: 0 auto 40px auto; /* Fjerner top-margin (margen mellem hero og description , men bevarer bundmargen */
     }
@@ -95,13 +96,14 @@
     .description-box h2
     {
         font-size: 2rem; /*Skrift størrelse på overskrift i Description box*/
-        color: white; /* Tekst farve på overskrift i Description box*/
+        font-weight: bold; /* Fed skrift */
+        color: black; /* Tekst farve på overskrift i Description box*/
     }
     /* Style for brødttekst i description box*/
     .description-box p 
     {
         font-size: 1.2rem; /* Skriftstørrelse på brødtekst */
-        color: white; /* Farve på brødtekst */
+        color: black; /* Farve på brødtekst */
     }
     /* Styling for new boxes */
     .info-container {
@@ -114,11 +116,12 @@
     }
 
     .info-box {
-        background: #ddd;
+        background: lightyellow;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 20px; /* Hvor rund kasserne skal være */
         text-align: center;
         width: 300px;
+        border: 4px solid black; /* Tilføjer sort kant rundt om kasserne*/
     }
 
     .info-box img {
