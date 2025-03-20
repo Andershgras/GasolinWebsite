@@ -252,7 +252,27 @@ html, body {
     font-size: 1.2rem;
     color: black;
 }
-.member-title {
+/*Audio style*/
+.audio-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+audio {
+    width: 300px;
+}
+.audio-label {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    background-color: orange; /* Background color */
+    padding: 5px 10px; /* Padding til spacing */
+    border-radius: 5px; /* Runde hjørner */
+    display: block; /* Laves til en block for sikrer full width og den kommer over audio playeren */
+    width: fit-content; /* Background color kun fylder som teksten */
+    margin: 0 auto 10px auto; /* Centrerer og mellemrum under */
+    text-align: center;
+}.member-title {
     background-color: orange
     color: black;
 }
