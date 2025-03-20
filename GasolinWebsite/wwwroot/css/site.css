@@ -93,6 +93,8 @@ body {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    background-color: orange;
+    color: black;
 }
 
 .timeline {
@@ -174,6 +176,7 @@ html, body {
     color: black;
     background-color: orange;
     margin-top: 20px;
+  
 }
 
 /* Centrer container */
@@ -242,4 +245,8 @@ html, body {
 
     .nav-btn:hover {
         background: black;
+    }
+
+    .Archive-header{
+        background-color: orange;   
     }
