@@ -95,6 +95,7 @@ body {
     margin-bottom: 20px;
     background-color: orange;
     color: black;
+    border-radius: 20px;
 }
 
 .timeline {
@@ -296,7 +297,7 @@ html, body {
     color: black;
     background-color: orange;
     margin-top: 20px;
-  
+    border-radius: 20px;
 }
 
 /* Centrer container */
@@ -367,6 +368,8 @@ html, body {
         background: black;
     }
 
-    .Archive-header{
-        background-color: orange;   
-    }
+.Archive-header {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 20px;
+}
