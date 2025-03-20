@@ -35,6 +35,7 @@ body {
     margin: 20px 0; /* Add some margin for spacing */
 }
 .member-card {
+    background-color: yellow;
     border: 2px solid #ddd;
     padding: 15px;
     margin: 15px auto;
