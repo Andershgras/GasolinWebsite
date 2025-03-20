@@ -30,18 +30,27 @@ body {
     margin: 0;
     padding: 0;
 }
-.title-container {
-    text-align: center; /* Center horizontally */
-    margin: 20px 0; /* Add some margin for spacing */
+.title-container h1 {
+    color: black; /* Change this to your desired color */
 }
+.title-container {
+    background-color: orange; /* Add yellow background */
+    text-align: center; /* Center horizontally */
+    padding: 20px 0; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin for spacing */
+    box-shadow:2px 2px 8px rgba(0,0,0,0,2)
+
+} .title-container h1 {
+        color: yellow; /* Keep the text color */
+        margin: 0; /* Remove default margin */
+    }
 .member-card {
-    background-color: yellow;
+    background-color: yellow; /* Yellow background for cards */
     border: 2px solid #ddd;
     padding: 15px;
     margin: 15px auto;
     width: 50%;
     text-align: center;
-    background-color: #f9f9f9;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -61,6 +70,7 @@ body {
 }
 
 .member-text {
+    bacground-colour:orange;
     font-size: 16px;
     line-height: 1.6;
     color: #333;

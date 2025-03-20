@@ -4,33 +4,28 @@
     ViewData["Title"] = "Gasolin Band Members";
 }
 
-
-    <div class="title-container"">
-        <h1 style=" color:aliceblue">@ViewData["Title"]</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/your-stylesheet.css" /> <!-- Link to your external CSS -->
+</head>
+<body class="yellow-page">
+    <div class="title-container">
+        <h1 style="color:black">@ViewData["Title"]</h1>
     </div>
-    @foreach (var member in Model.Members)
-    {
-        <div class="member-card">
-        <img class ="band-image" classe="card-img-top" src="@member.ImagePath" alt="@member.Name" />
-            <div class="card-body">
-                <h2 class="member-title">@member.Name</h2>
-                <h3>Role: @member.Role</h3>
-                <p class="member-text">@member.Biography</p>
-            </div>
-        </div>
-    }
 
-
-<body class="yellow-page"> <!-- A container to control back ground clour
     <div class="page-container">
         @foreach (var member in Model.Members)
         {
             <div class="member-card">
-                <img src="@member.ImagePath" alt="@member.Name" class="band-image" />
-                <h2 class="member-title">@member.Name</h2>
-                <p class="member-text"><strong>Role:</strong> @member.Role</p>
-                <p class="member-text">@member.Biography</p>
+                <img class="band-image card-img-top" src="@member.ImagePath" alt="@member.Name" />
+                <div class="card-body">
+                    <h2 class="member-title">@member.Name</h2>
+                    <h3>Role: @member.Role</h3>
+                    <p class="member-text">@member.Biography</p>
+                </div>
             </div>
         }
     </div>
 </body>
+</html>
