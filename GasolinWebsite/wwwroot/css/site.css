@@ -49,10 +49,6 @@ body {
     color: white;
    
 }
-.nav-link {
-    padding-left: 100px;
-}
-
 
 
 .band-image {
@@ -155,3 +151,95 @@ body {
     border-radius: 5px; /* Add rounded corners to the background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
+
+.member-title {
+    background-color: orange
+    color: black;
+}
+
+html, body {
+    background-image: url('/images/Gold.png?v=1');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.memorabilia-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    margin-top: 20px;
+}
+
+/* Centrer container */
+.memorabilia-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Hide Radio Buttons */
+.carousel-radio {
+    display: none;
+}
+
+/* Memorabilia Wrapper */
+.memorabilia-wrapper {
+    width: 320px; /* Viser 1 Box ad gangen, sæt til 640px hvis vi vil vise 2 box ad gangen */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Memorabilia Items (Række af boxe) */
+.memorabilia-items {
+    display: flex;
+    width: calc(320px * @memorabiliaItems.Count);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individuel Box Style */
+.memorabilia-box {
+    width: 320px;
+    background: lightyellow;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+    .memorabilia-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .memorabilia-box p {
+        font-size: 1rem;
+        color: black;
+        margin-top: 10px;
+    }
+
+/* Navigation Prikker */
+.carousel-navigation {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    width: 15px;
+    height: 15px;
+    background: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    .nav-btn:hover {
+        background: black;
+    }
