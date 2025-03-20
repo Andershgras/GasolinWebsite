@@ -57,7 +57,7 @@ body {
 
 .navbar-nav .nav-link {
     color: white;
-   
+    padding-block: 10px;
 }
 
 
