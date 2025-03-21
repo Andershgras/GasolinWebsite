@@ -334,7 +334,7 @@ html, body {
 /* Memorabilia Items (Række af boxe) */
 .memorabilia-items {
     display: flex;
-    width: calc(320px * @memorabiliaItems.Count);
+    width: calc(320px * @memorabiliaItems.Count);/* it calculates the no of pixecels and multiply with the number of item*/
     transition: transform 0.5s ease-in-out;
 }
 
