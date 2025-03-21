@@ -34,25 +34,25 @@ body {
     color: black; /* Change this to your desired color */
 }
 .title-container {
-    background-color: orange; /* Add yellow background */
+    background-color: orange; /* background */
     text-align: center; /* Center horizontally */
-    padding: 20px 0; /* Add padding for spacing */
-    margin-bottom: 20px; /* Add margin for spacing */
-    box-shadow:2px 2px 8px rgba(0,0,0,0,2)
-
-} .title-container h1 {
-        color: yellow; /* Keep the text color */
+    padding: 20px 0; /* padding for spacing */
+    margin-bottom: 20px; /* margin for spacing */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /*Shadow efect*/
+} 
+.title-container h1 {
+        color: yellow; /*Check this is used twice why??? Keep the text color */
         margin: 0; /* Remove default margin */
     }
 .member-card {
-    background-color: yellow; /* Yellow background for cards */
+    background-color: yellow; /* background for cards */
     border: 2px solid #ddd;
     padding: 15px;
     margin: 15px auto;
     width: 50%;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-nav .nav-link {
@@ -62,7 +62,7 @@ body {
 
 
 .band-image {
-    width: 250px; /* Adjust as needed */
+    width: 250px; 
     height: auto;
     border-radius: 7px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
@@ -70,7 +70,7 @@ body {
 }
 
 .member-text {
-    bacground-colour:orange;
+    background:orange;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
@@ -79,13 +79,13 @@ body {
 .member-title {
     font-size: 22px;
     font-weight: bold;
-    color: #d10000; /* Gasolin’s red theme */
+    color: #d10000; /* Gasolin’s yellow theme */
 }
 
 /*GasolinTimeLine Style*/
 
 body {
-   /* background-color: yellow; /* Sets the whole page background to yellow */
+   /* background-color: yellow */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -97,7 +97,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-   /* background-color: yellow;  Added yellow background */
+   /*  Added yellow background */
 }
 
 .timeline-title {
@@ -142,8 +142,8 @@ body {
 .video-container {
     width: 100%; /*  full width  */
     height: 230px; /*  fixed height */
-    object-fit: cover; /*  video fills the frame  */
-    border-radius: 10px; /* Adds rounded corners */
+    object-fit: cover; /*   frame for the video */
+    border-radius: 10px; /*  rounded corners */
 }
 
 
